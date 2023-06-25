@@ -87,7 +87,6 @@ viewProfileButton.addEventListener("click", () => {
 
 logoutButton.addEventListener("click", () => {
   // Clear local storage and redirect to the login page
-  localStorage.clear();
   window.location.href = "login.html";
 });
 
