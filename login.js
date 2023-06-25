@@ -28,4 +28,12 @@ function formValidation(event) {
   }
 }
 
+// Add event listener to the clear button
+document.getElementById('clear-button').addEventListener('click', function() {
+  // Clear local storage
+  localStorage.clear();
+
+  // Optionally, you can perform additional actions after clearing local storage
+  alert('Local storage cleared successfully.');
+});
 
