@@ -1,8 +1,8 @@
 let form = document.getElementById("form");
 let emailInput = document.getElementById("email");
 let passwordInput = document.getElementById("password");
-console.log(emailInput.value)
-let user = JSON.parse(localStorage.getItem("userDetails"));
+// console.log(emailInput.value)
+let user = JSON.parse(localStorage.getItem("user"));
 
 console.log(user)
 form.addEventListener("submit", formValidation);
@@ -11,7 +11,8 @@ function formValidation(event) {
   event.preventDefault();
   let username = emailInput.value;
   let password = passwordInput.value;
-  let user = JSON.parse(localStorage.getItem("userDetails"));
+  console.log(username)
+  let user = JSON.parse(localStorage.getItem("user"));
 
   if (!user) {
     alert("User not found. Please register first.");
